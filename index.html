@@ -67,8 +67,13 @@
                             <label for="tab-2" class="tab-up">Phone</label>
                         </div>
                         <form action="" class="form-signin" method="post" name="form">
-                            <input class="email-inp" type="email" name="email" id="email" placeholder="Email or User ID">
-                            <p class="email-txt">Standard call, message, or data rates may apply.</p>
+                            <div class="form-email-id">
+                                <input class="email-inp" type="email" name="email" id="email" placeholder="Email or User ID">
+                                <p class="email-txt">Standard call, message, or data rates may apply.</p>
+                            </div>
+                            <div class="form-phone">
+                                <input class="email-inp" type="phone" name="phone" id="phone" placeholder="Phone number">
+                            </div>
                             <div class="form-checkbox">
                                 <input class="form-check" type="checkbox" value="isRememberMe" id="rememberMe">
                                 <label for="rememberMe">Remember me</label>
@@ -121,6 +126,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

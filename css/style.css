@@ -202,6 +202,10 @@ img {
   margin-top: 20px;
 }
 
+.form-phone{
+  display: none;
+}
+
 .email-inp{
   outline: none;
   border: 1px solid var(--grey);
