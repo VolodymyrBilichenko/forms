@@ -451,6 +451,7 @@ img {
 
 
 /* verification */
+
 .form-container{
   /* display: none; */
   display: block;
@@ -495,6 +496,28 @@ img {
 
 
 
+/* Check form */
+
+.form-container-check .form-check-code{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--brown);
+}
+.form-container-check .form-verification{
+  display: flex;
+  margin-bottom: 5px;
+}
+.form-container-check .signin-btn{
+  margin-top: 35px;
+}
+.form-container-check .something{
+  margin-top: 20px;
+}
+.form-container-check .mail-gif{
+  margin: 0 auto;
+  margin: 15px 0;
+}
 
 /* Mobile */
 
