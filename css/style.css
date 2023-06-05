@@ -44,7 +44,7 @@ body {
 
 .container {
   min-width: 320px;
-  max-width: 380px;
+  max-width: 580px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -215,7 +215,7 @@ img {
   border-radius: 4px;
 }
 .email-inp:focus{
-  border: 3px solid var(--green);
+  border: 1px solid var(--green);
 }
 
 .email-txt{
@@ -450,11 +450,59 @@ img {
 }
 
 
+/* verification */
+.form-container{
+  /* display: none; */
+  display: block;
+}
+
+
+.form-container-verif{
+  /* display: block; */
+  display: none;
+}
+
+.form-container-verif .form-instr{
+  margin-bottom: 15px;
+}
+
+.form-container-verif .different-acc{
+  color: var(--blue-url);
+  transition: var(--trns-general);
+}
+.form-container-verif .different-acc:focus,
+.form-container-verif .different-acc:hover{
+  text-decoration: underline;
+}
+
+.form-container-verif .email-inp{
+  margin-bottom: 25px;
+}
+.form-container-verif .different-way{
+  color: var(--blue-url);
+  transition: var(--trns-general);
+}
+.form-container-verif .different-way:focus,
+.form-container-verif .different-way:hover{
+  text-decoration: underline;
+}
+.form-container-verif .pass-label{
+  display: flex;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: var(--grey);
+}
+
+
+
+
 /* Mobile */
 
-
-
-
+@media (min-width: 768px) {
+  .form-container{
+    padding: 40px 30px;
+  }
+}
 
 
 

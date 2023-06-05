@@ -50,7 +50,7 @@
     <main>
         <section class="main-form">
             <div class="container">
-                <div class="form-container">
+                <div class="form-container" id="form-container-1">
                     <h2 class="form-name">
                         Sign in
                     </h2>
@@ -78,7 +78,7 @@
                                 <input class="form-check" type="checkbox" value="isRememberMe" id="rememberMe">
                                 <label for="rememberMe">Remember me</label>
                             </div>
-                            <button class="btn signin-btn">Sign In</button>
+                            <button class="btn signin-btn js-singin" onclick="toggleForms(event)">Sign In</button>
                         </form>
                     </div>
                     <p class="form-txt">
@@ -91,6 +91,26 @@
                 </div>
                 <div class="form-privacy">
                     <p>Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</p>
+                </div>
+                <div class="form-container form-container-verif" id="form-container-2">
+                    <h2 class="form-name">
+                        Enter your Intuit password
+                    </h2>
+                    <p class="form-instr">Chose how to sign in to</p>
+                    <a class="different-acc" href="#">Use a different account</a>
+                    <div class="form-box">
+                        <form action="" class="form-signin" method="post" name="form">
+                            <div class="form-email-id">
+                                <label class="pass-label" for="password">Password</label>
+                                <input class="email-inp" type="password" name="password" id="password" placeholder="Password">
+                            </div>
+                            <button class="btn signin-btn js-continue">Continue</button>
+                        </form>
+                    </div>
+                    <div class="form-or">
+                        <p>OR</p>
+                    </div>
+                    <a href="#" class="different-way">Sign in a different way</a>
                 </div>
             </div>
         </section>

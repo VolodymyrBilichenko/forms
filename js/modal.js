@@ -14,3 +14,18 @@ document.addEventListener('DOMContentLoaded', function() {
         formPhone.style.display = 'block';
     });
 });
+
+
+
+
+function toggleForms(event) {
+event.preventDefault();
+
+var formContainer1 = document.getElementById("form-container-1");
+var formPrivacy = document.getElementsByClassName("form-privacy")[0];
+var formContainer2 = document.getElementById("form-container-2");
+
+formContainer1.style.display = "none";
+formPrivacy.style.display = "none";
+formContainer2.style.display = "block";
+}
