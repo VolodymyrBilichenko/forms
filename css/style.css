@@ -5,9 +5,12 @@
   --white: rgb(255, 255, 255);
   --grey: rgb(120, 120, 120);
   --grey-border: rgb(186, 190, 197);
+  --grey-privaci: rgb(141, 144, 150);
   --blue-url: #0077c5;
   --brown: rgb(57, 58, 61);
   --green: #2ca01c;
+  --green-hov: #1d6e12;
+  --body: rgb(236, 238, 241);
 
   --trns-general: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --trns-modal: 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -22,6 +25,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   box-sizing: border-box;
+  background-color: var(--body);
 }
 
 .h-hidden {
@@ -127,12 +131,12 @@ img {
 
 
 
-
 .form-container{
-  padding: 15px;
   background-color: var(--white);
-  border: 1px solid var(--grey-border);
   text-align: center;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid var(--grey-border);
 }
 
 .form-name{
@@ -235,12 +239,71 @@ img {
 }
 
 .signin-btn{
-  display: block;
   width: 100%;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 16px;
   color: var(--white);
   background-color: var(--green);
   max-width: 320px;
   padding: 10px 8px;
+  border-radius: 4px;
+  transition: var(--trns-general);
+  margin-bottom: 10px;
+}
+
+.signin-btn:focus,
+.signin-btn:hover{
+  background-color: var(--green-hov);
+  text-decoration: underline;
+}
+
+.form-txt{
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: var(--grey);
+  border-bottom: 1px solid var(--grey-border);
+  padding-bottom: 7px;
+}
+.form-txt a {
+  color: var(--blue-url);
+}
+
+.form-txt a:focus,
+.form-txt a:hover{
+  text-decoration: underline;
+}
+
+.something a {
+  font-size: 16px;
+  color: var(--blue-url);
+}
+.something a:focus,
+.something a:hover{
+  text-decoration: underline;
+}
+
+.something p{
+  font-size: 16px;
+  color: var(--grey);
+}
+
+.form-privacy{
+  border: 1px solid var(--grey-border);
+  border-top: none;
+  background-color: var(--body);
+  padding: 16px 0;
+  text-align: center;
+  font-size: 10px;
+  color: var(--grey-privaci);
+  padding: 10px;
+}
+.form-privacy a {
+  color: var(--blue-url);
+}
+
+.form-privacy a:focus,
+.form-privacy a:hover{
+  text-decoration: underline;
 }
