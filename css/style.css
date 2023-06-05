@@ -307,3 +307,34 @@ img {
 .form-privacy a:hover{
   text-decoration: underline;
 }
+
+
+.footer{
+  padding-top: 20px;
+}
+
+.footer-menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.menu-item a{
+  color: var(--blue-url);
+  font-size: 15px;
+  transition: var(--trns-general);
+}
+
+.menu-item a:focus,
+.menu-item a:hover{
+  text-decoration: underline;
+}
+
+.footer-inc{
+  text-align: center;
+  color: var(--grey);
+  font-size: 10px;
+  margin-bottom: 5px;
+}
