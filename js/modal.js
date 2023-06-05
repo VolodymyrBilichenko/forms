@@ -15,17 +15,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
-
 function toggleForms(event) {
-event.preventDefault();
+    event.preventDefault();
 
-var formContainer1 = document.getElementById("form-container-1");
-var formPrivacy = document.getElementsByClassName("form-privacy")[0];
-var formContainer2 = document.getElementById("form-container-2");
+    const formContainer1 = document.getElementById("form-container-1");
+    const formPrivacy = document.getElementsByClassName("form-privacy")[0];
+    const formContainer2 = document.getElementById("form-container-2");
+    let timer = document.querySelector(".loading-form");
 
-formContainer1.style.display = "none";
-formPrivacy.style.display = "none";
-formContainer2.style.display = "block";
+
+    timer.style.display = "block"
+    setTimeout(() => {
+        timer.style.display = "none"
+        formContainer2.style.display = "block";
+        formContainer1.style.display = "none";
+        formPrivacy.style.display = "none";
+    }, 2000)
 }
