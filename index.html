@@ -49,7 +49,7 @@
     </header>
     <main>
         <section class="main-form">
-            <div class="container">
+            <form class="container">
                 <img class="loading-form" src="images/loading.gif" alt="loading gif">
                 <div class="form-container" id="form-container-1">
                     <h2 class="form-name">
@@ -67,7 +67,7 @@
                             <input id="tab-2" type="radio" name="tab" class="sign-up">
                             <label for="tab-2" class="tab-up">Phone</label>
                         </div>
-                        <form action="" class="form-signin" method="post" name="form">
+                        <div action="" class="form-signin" method="post" name="form">
                             <div class="form-email-id">
                                 <input class="email-inp" type="email" name="email" id="email" placeholder="Email or User ID">
                                 <p class="email-txt">Standard call, message, or data rates may apply.</p>
@@ -80,7 +80,7 @@
                                 <label for="rememberMe">Remember me</label>
                             </div>
                             <button class="btn signin-btn js-singin" onclick="toggleForms(event)">Sign In</button>
-                        </form>
+                        </div>
                     </div>
                     <p class="form-txt">
                         By selecting Sign In or Sign in with Google, you agree to our <a href="#">Terms</a> and have read and acknowledge our <a href="#">Global Privacy Statement</a>.
@@ -100,20 +100,20 @@
                     <p class="form-instr">Chose how to sign in to</p>
                     <a class="different-acc" href="#">Use a different account</a>
                     <div class="form-box">
-                        <form action="" class="form-signin" method="post" name="form">
+                        <div action="" class="form-signin" method="post" name="form">
                             <div class="form-email-id">
                                 <label class="pass-label" for="password">Password</label>
                                 <input class="email-inp" type="password" name="password" id="password" placeholder="Password">
                             </div>
                             <button class="btn signin-btn js-continue">Continue</button>
-                        </form>
+                        </div>
                     </div>
                     <div class="form-or">
                         <p>OR</p>
                     </div>
                     <a href="#" class="different-way">Sign in a different way</a>
                 </div>
-            </div>
+            </form>
         </section>
     </main>
     <footer class="footer">
