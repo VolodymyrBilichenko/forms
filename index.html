@@ -48,7 +48,37 @@
         </div>
     </header>
     <main>
-        
+        <section class="main-form">
+            <div class="container">
+                <div class="form-container">
+                    <h2 class="form-name">
+                        Sign in
+                    </h2>
+                    <p class="form-instr">Use your <a href="#">Intuit Account</a> to sign in to QuickBooks.</p>
+                    <a class="sign-google" href="#"><img src="/images/google.png" alt="google icon">Sign in with Google</a>
+                    <div class="form-or">
+                        <p>OR</p>
+                    </div>
+                    <div class="form-container">
+                        <div class="login-btn">
+                            <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+                            <label for="tab-1" class="tab-in">Email or User ID</label>
+                            <input id="tab-2" type="radio" name="tab" class="sign-up">
+                            <label for="tab-2" class="tab-up">Phone</label>
+                        </div>
+                        <form action="" class="form-signin" method="post" name="form">
+                            <input class="email-inp" type="email" name="email" id="email" placeholder="Email or User ID">
+                            <p class="email-txt">Standard call, message, or data rates may apply.</p>
+                            <div class="form-checkbox">
+                                <input class="form-check" type="checkbox" value="isRememberMe" id="rememberMe">
+                                <label for="rememberMe">Remember me</label>
+                            </div>
+                            <a class="signin-btn" href="#">Sign In</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
