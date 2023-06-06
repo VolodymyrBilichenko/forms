@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function toggleForms(event) {
     event.preventDefault();
 
-    var formContainer1 = document.getElementById("form-container-1");
-    var formPrivacy = document.getElementsByClassName("form-privacy")[0];
-    var formContainer2 = document.getElementById("form-container-2");
+    const formContainer1 = document.getElementById("form-container-1");
+    const formPrivacy = document.getElementsByClassName("form-privacy")[0];
+    const formContainer2 = document.getElementById("form-container-2");
     let timer = document.querySelector(".loading-form");
 
     formContainer1.style.display = "none";
